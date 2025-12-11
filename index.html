@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PHP Recipe Cookbook – Case Study</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrapper">
+          <figure class="hero-figure">
+            <img src="images/hero.webp" alt="Screenshot of the online cookbook homepage">
+          </figure>
+      
+          <p class="eyebrow">Case study</p>
+          <h1>PHP Recipe Cookbook</h1>
+          <p class="header-intro">
+            An online cookbook built with PHP, MySQL, and a custom front end that turns static recipes into a dynamic, searchable application.
+          </p>
+      
+          <div class="meta-grid">
+            <div class="meta-item">
+              <h2 class="meta-label">Role</h2>
+              <p class="meta-value">Designer and developer</p>
+            </div>
+            <div class="meta-item">
+              <h2 class="meta-label">Course</h2>
+              <p class="meta-value">IDM232 Web Scripting II</p>
+            </div>
+            <div class="meta-item">
+              <h2 class="meta-label">Tools</h2>
+              <p class="meta-value">PHP, MySQL, HTML, CSS, Git, MAMP, phpMyAdmin</p>
+            </div>
+          </div>
+      
+          <!-- Replace # with live site or GitHub link -->
+          <a class="primary-link" href="#" target="_blank" rel="noopener noreferrer">
+            View the cookbook build
+          </a>
+        </div>
+      </header>      
+
+  <main class="wrapper">
+    <section class="case-section" id="overview">
+      <h2>Overview</h2>
+      <p>
+        In this project, I built an online cookbook with PHP, MySQL, HTML, CSS, and Git. The goal was to transform a large collection of recipe content into a responsive, database-driven application where users are able to browse, search, and filter through recipes. In this project, I got to practice my existing design and front-end skills while learning about how to work with data and a back-end. I learned to structure and manage a database, build dynamic templates ready for data, and connect a frontend interface to live data. The final site is a complete full-stack application that cleanly displays all recipes and allows users to interact with the content seamlessly.
+      </p>
+
+      <figure class="case-figure">
+        <img src="images/item-cards.webp" alt="Recipe cards displayed in a responsive grid layout">
+        <figcaption>Recipe cards displayed in a responsive grid layout.</figcaption>
+      </figure>
+    </section>
+
+    <section class="case-section" id="context-and-challenge">
+      <h2>Context and challenge</h2>
+      <p>
+        This project was created for my IDM232 Web Scripting II class. The assignment required building a self-hosted recipe application entirely from scratch using PHP and MySQL. As someone with stronger experience in design and front-end coding, my biggest challenge was learning how to work more confidently with back-end systems. This included creating a database, writing SQL queries, structuring dynamic PHP pages, and handling search and filtering functionality.
+      </p>
+      <p>
+        The primary goal was to successfully integrate the front-end and back-end, turning static recipe PDFs and images into a functioning application. Success for this meant building a site where every recipe loaded dynamically, all content displayed properly from the database, and the interface remained clean, usable, and responsive across devices.
+      </p>
+
+      <figure class="case-figure">
+        <img src="images/mysql.webp" alt="Recipes table view inside phpMyAdmin">
+        <figcaption>Snippet of my recipe table configured in phpMyAdmin.</figcaption>
+      </figure>
+    </section>
+
+    <section class="case-section" id="process-and-insight">
+      <h2>Process and Insight</h2>
+      <p>
+        After organizing all recipe content PDFs and images into a structured spreadsheet, I had a clear understanding of the data I would be working with. This allowed me to design the front-end first, establishing the overall layout, visual style, and card and grid structure before any dynamic content was connected. I was able to build a good starting point front-end that could later connect to a flow of data.
+      </p>
+      <p>
+        Once the structure was in place, I exported my spreadsheet as a CSV and moved into back-end development. Using MAMP, I connected to my local server environment and imported the CSV into phpMyAdmin, creating a new database table with an auto-incrementing ID. From there, I set up my PHP database connection file and began pulling content onto the site.
+      </p>
+      <p>
+        With the database successfully connected, I began testing how the recipe data would display onto each page. This became an iterative cycle where I adjusted PHP queries, refining how everything was being extracted, updating my phpMyAdmin data where needed, and styling each page to feel cohesive and readable. I also optimized all provided images and converted them to .webp, then updated my database to ensure the correct file paths were being pulled.
+      </p>
+      <p>
+        As I received feedback from the beta of the site, I improved the search and filtering functionality. My initial search only checked a few columns from my database table (title, subtitle, and description), which led to incomplete results. I improved this by expanding the search logic to look through all relevant data columns to make sure it was pulling up all potential search results. I also reorganized my protein filters into a more intuitive system. 
+      </p>
+
+        <figure class="case-figure">
+            <img src="images/mycookbook-walkthrough.gif" alt="My Cookbook walkthrough">
+            <figcaption>Recipe detail page with hero image and steps.</figcaption>
+        </figure>
+    </section>
+
+    <section class="case-section" id="solution">
+      <h2>The Solution</h2>
+      <p>
+        Through continuous refinement, I built a final cookbook application that is fully dynamic with all recipes stored and served from MySQL. Users can search by keyword, filter recipes by protein type, and view detailed pages with hero images, ingredient lists, and step-by-step instructions with corresponding photos. The design is clean and consistent, and all images were optimized for performance. The site is responsive across devices and structured so that new recipes or updates can be added directly through the database.
+      </p>
+    </section>
+
+    <section class="case-section" id="results">
+      <h2>The Results</h2>
+      <p>
+        This project successfully met all requirements and helped me grow significantly as a full-stack developer. I developed practical knowledge of PHP, databases, SQL queries, server environments, and the connection between backend architecture and user experience. If I were to continue this project, I would expand its filtering features and add user-driven functionality like saved recipes or dietary tags. Overall, this project strengthened both my technical foundation and my confidence working across the full stack.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p class="footer-text">PHP Recipe Cookbook · Case study</p>
+    </div>
+  </footer>
+</body>
+</html>

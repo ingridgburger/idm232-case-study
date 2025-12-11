@@ -1,0 +1,221 @@
+/* Fonts */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('fonts/dm-sans-variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Properties */
+  :root {
+    --light-1: #f4e7d9;
+    --light-2: #f6e8da;
+    --dark-1: #1a1a1a;
+    --dark-2: #232323;
+    --accent: #f7d788;
+    --white: #ffffff;
+  
+    --background-color: var(--light-1);
+    --foreground-color: var(--dark-1);
+  
+    --font-bold: 'Playfair Display', Helvetica, Arial, sans-serif;
+    --font-sans-serif: 'DM Sans', Helvetica, Arial, sans-serif;
+  
+    --rhythm: 1.5rem;
+  }
+  
+  /* Global */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans-serif);
+    color: var(--foreground-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 calc(var(--rhythm) * 0.9);
+  }
+  
+  /* Header */
+  
+  .site-header {
+    padding: calc(var(--rhythm) * 1.5) 0 calc(var(--rhythm) * 1.5);
+  }  
+  
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.75rem;
+    margin: 0 0 0.5rem;
+    color: var(--dark-2);
+  }
+  
+  h1 {
+    font-family: var(--font-bold);
+    line-height: 1.1;
+    margin: 0 0 var(--rhythm);
+  }
+  
+  .header-intro {
+    font-size: 1.05rem;
+    max-width: 38rem;
+    margin: 0 0 var(--rhythm);
+  }
+  
+  /* Meta */
+  
+  .meta-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: var(--rhythm);
+  }
+  
+  .meta-item {
+    flex: 1 1 150px;
+    padding: 0.75rem 0.9rem;
+    border-radius: 0.75rem;
+    background-color: var(--light-2);
+  }
+  
+  .meta-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0 0 0.3rem;
+    color: var(--dark-2);
+  }
+  
+  .meta-value {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  
+  /* Primary link */
+  
+  .primary-link {
+    display: inline-block;
+    margin-bottom: var(--rhythm);
+    padding: 0.6rem 1.3rem;
+    border-radius: 999px;
+    border: 1px solid var(--dark-1);
+    background-color: var(--dark-1);
+    color: var(--white);
+    font-size: 0.95rem;
+    text-decoration: none;
+  }
+  
+  .primary-link::after {
+    content: ' ↗';
+    font-size: 0.85em;
+  }
+  
+  /* Hero */
+  .hero-figure {
+    margin: 0 0 var(--rhythm);
+  }
+  
+  .hero-figure img {
+    height: 50vh;
+    margin: 0 auto;
+    width: auto;
+    display: block;
+  }
+  
+  /* Case study sections */
+  main {
+    padding-bottom: calc(var(--rhythm) * 2.5);
+  }
+  
+  .case-section {
+    padding: calc(var(--rhythm) * 1.2) 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  
+  .case-section:first-of-type {
+    border-top: none;
+  }
+  
+  .case-section h2 {
+    font-family: var(--font-bold);
+    font-size: 1.6rem;
+    margin: 0 0 0.75rem;
+  }
+  
+  .case-section p {
+    margin: 0 0 0.9rem;
+    font-size: 0.98rem;
+  }
+  
+  /* Figures in content */
+  
+  .case-figure {
+    margin: 1rem 0 0.3rem;
+  }
+  
+  .case-figure img {
+    border-radius: 0.9rem;
+  }
+  
+  .case-figure figcaption {
+    font-size: 0.8rem;
+    margin-top: 0.35rem;
+    color: var(--dark-2);
+  }
+  
+  /* Image row */
+  
+  .image-row {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  @media (min-width: 780px) {
+    .image-row {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  
+  /* Footer */
+  
+  .site-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding: var(--rhythm) 0;
+    background-color: var(--light-2);
+  }
+  
+  .footer-text {
+    margin: 0;
+    font-size: 0.8rem;
+    text-align: right;
+    color: var(--dark-2);
+  }
+  
