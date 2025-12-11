@@ -32,9 +32,7 @@
   
     --rhythm: 1.5rem;
   }
-  
-  /* Global */
-  
+    
   * {
     box-sizing: border-box;
   }
@@ -64,7 +62,6 @@
   }
   
   /* Header */
-  
   .site-header {
     padding: calc(var(--rhythm) * 1.5) 0 calc(var(--rhythm) * 1.5);
   }  
